@@ -1,0 +1,8 @@
+
+public class Welcome
+{
+    public static viod matin(String [] args)
+    {
+      System.out.println("Hello World!");
+      }
+ }
