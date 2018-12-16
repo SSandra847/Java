@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class BinaryConverter
+{
+    public static void main(String[] args) 
+    {
+        int num, count = 0, a;
+        String x = "";
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter any decimal number:");
+        num = s.nextInt();
+        while(num > 0)
+        {
+            a = num % 2;
+            if(a == 1)
+            {
+                count++;
+            }
+            x = x + "" + a;
+            num = num / 2;
+        }
+        System.out.println("Binary number:"+x);
+        System.out.println("1s:"+count);
+    }
+}
