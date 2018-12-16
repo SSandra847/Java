@@ -1,0 +1,33 @@
+public class ValueParameters
+{	
+	public static void main(String[] args)
+	{	val();
+	}
+	
+	public static void val()
+	{	int x = 2;
+		int y = 4;
+		System.out.println("Method execute. x: " + x + " y: " + y);
+		ValSwap(x,y);
+		System.out.println("Method execute. x: " + x + " y: " + y);
+		AddParameters(x,y);
+		System.out.println("Method execute. x: " + x + " y: " + y);
+	}
+	
+	public static void ValSwap(int x, int y)
+	{	System.out.println("Method value swap. x: " + x + " y: " + y);
+		int hold = x;
+		x = y;
+		y = hold;
+		System.out.println("Method value swap. x: " + x + " y: " + y);
+	}
+	
+	public static void AddParameters(int a, int b)
+	{	System.out.println("Method add parameters. a: " + a + " b: " + b);
+		a = a * b;
+		b = 12;
+		System.out.println("Method add Parameters. a: " + a + " b: " + b);
+		ValSwap(b,a);
+		System.out.println("Method add Parameters. a: " + a + " b: " + b);	
+	}
+}
