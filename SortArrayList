@@ -1,0 +1,23 @@
+import java.util.*; 
+  
+public class SortArrayList
+{ 
+    public static void main(String[] args) 
+    { 
+        // Create a list of strings 
+        ArrayList<String> item = new ArrayList<String>(); 
+        item.add("Star Wars"); 
+        item.add("Star Trek"); 
+        item.add("FireFly"); 
+        item.add("Game of Thrones"); 
+        item.add("Rick and Morty"); 
+  
+        /* Collections.sort method is sorting the 
+        elements of ArrayList in ascending order. */
+        Collections.sort(item); 
+  
+        // Let us print the sorted list 
+        System.out.println("List after the use of" + 
+                           " Collection.sort() :\n" + item); 
+    } 
+} 
